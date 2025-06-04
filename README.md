@@ -3,77 +3,101 @@
 ![image](https://github.com/user-attachments/assets/d72aacb2-5cfc-4d56-9bca-d1cac832d5eb)
 ![image](https://github.com/user-attachments/assets/e53e3f38-83ff-493b-bd39-47b8847fb2ef)
 ![image](https://github.com/user-attachments/assets/6d354607-cb6e-4c44-a4d1-6d8d94be4c61)
-📚 HƯỚNG DẪN SỬ DỤNG HỆ THỐNG TRUYỀN FILE
-🚀 Bắt đầu sử dụng
-1. Cài đặt
-Cài đặt Python trên máy tính
-Mở Command Prompt (CMD) và chạy lệnh: pip install flask flask-cors
-                                      python server.py
-2. Truy cập hệ thống
+1. Khởi động hệ thống
+Chuẩn bị môi trường:
+
+Đảm bảo bạn đã cài đặt Python 3.x
+
+Cài đặt các thư viện cần thiết: pip install flask flask-cors
+
+Khởi động server:
+
+Chạy file server.py: python server.py
+
+Server sẽ chạy tại địa chỉ http://localhost:5000
+
+Mở client:
+
 Mở file client.html trong trình duyệt web
-Hệ thống sẽ hiển thị giao diện đăng nhập
-👤 ĐĂNG KÝ & ĐĂNG NHẬP
-Đăng ký tài khoản mới
-Nhấn vào tab "Đăng ký"
-Điền thông tin:
-✏️ Tên đăng nhập (ví dụ: nguyenvana)
-🔒 Mật khẩu (ít nhất 6 ký tự)
-�� Xác nhận mật khẩu
+
+2. Chức năng đăng ký tài khoản
+Trên giao diện, chọn tab "Đăng ký"
+
+Nhập thông tin:
+
+Tên đăng nhập (không được trùng với tên đã có)
+
+Mật khẩu
+
+Xác nhận mật khẩu (phải giống với mật khẩu)
+
 Nhấn nút "Đăng ký"
-Nếu thành công, hệ thống sẽ chuyển về tab đăng nhập
-Đăng nhập
-Điền thông tin:
-👤 Tên đăng nhập
-🔑 Mật khẩu
-Tích vào "Ghi nhớ đăng nhập" nếu muốn lưu thông tin
+
+Nếu thành công, hệ thống sẽ tự động chuyển về tab đăng nhập và điền sẵn thông tin
+
+3. Chức năng đăng nhập
+Nhập tên đăng nhập và mật khẩu
+
+Có thể tích chọn "Ghi nhớ đăng nhập" để lưu thông tin trên trình duyệt
+
 Nhấn nút "Đăng nhập"
-📤 GỬI FILE
-Các bước gửi file
-Chọn người nhận từ danh sách
-Nhấn "Chọn file" để chọn file cần gửi
-Nhấn "Upload" để gửi file
-Đợi thông báo upload thành công
-Lưu ý khi gửi file
-✅ File phải có kích thước hợp lệ
-✅ Phải chọn người nhận trước khi upload
-✅ Đợi thông báo thành công trước khi đóng trang
-📥 NHẬN & TẢI FILE
-Xem danh sách file
-📋 Danh sách file hiển thị:
+
+Nếu thành công, giao diện sẽ chuyển sang phần truyền file
+
+4. Chức năng truyền file
+Chọn người nhận:
+
+Trong dropdown "Chọn người nhận", chọn người bạn muốn gửi file đến
+
+Chọn file:
+
+Nhấn nút "Chọn file" và chọn file từ máy tính
+
+Upload file:
+
+Nhấn nút "Upload" để gửi file
+
+Sau khi upload thành công, thông tin file sẽ hiển thị bao gồm:
+
 Tên file
-Người gửi
+
+Mã SHA-256 (để kiểm tra tính toàn vẹn của file)
+
 Người nhận
-Mã SHA-256 (để kiểm tra tính toàn vẹn)
-Tải file về
-Tìm file cần tải trong danh sách
-Chọn một trong hai cách:
-Nhấn vào tên file
-Nhấn nút "Tải về" bên cạnh file
-🔒 BẢO MẬT & AN TOÀN
-Bảo vệ tài khoản
-🔐 Sử dụng mật khẩu mạnh
-🔐 Không chia sẻ thông tin đăng nhập
-🔐 Đăng xuất sau khi sử dụng
-Kiểm tra file
-✅ Xác nhận người gửi
-✅ Kiểm tra mã SHA-256
-✅ Tải file từ nguồn đáng tin cậy
-⚠️ XỬ LÝ LỖI THƯỜNG GẶP
-Không đăng nhập được
-❌ Kiểm tra lại tên đăng nhập và mật khẩu
-❌ Đảm bảo server đang chạy
-❌ Thử làm mới trang web
-Không upload được file
-❌ Kiểm tra đã chọn người nhận
-❌ Kiểm tra kết nối internet
-❌ Kiểm tra dung lượng file
-Không thấy file
-❌ Kiểm tra xem bạn là người gửi hay người nhận
-❌ Làm mới danh sách file
-❌ Kiểm tra quyền truy cập
-💡 MẸO SỬ DỤNG
-�� Sử dụng "Ghi nhớ đăng nhập" để tiết kiệm thời gian
-📁 Đặt tên file rõ ràng để dễ tìm kiếm
-🔍 Kiểm tra mã SHA-256 để đảm bảo an toàn
-📤 Gửi file cho đúng người nhận
-�� Lưu file vào vị trí dễ tìm
+
+Danh sách file:
+
+Phần "Danh sách file" hiển thị tất cả file bạn đã gửi hoặc nhận được
+
+Mỗi file hiển thị:
+
+Tên file (có thể nhấn để tải về)
+
+Người gửi
+
+Người nhận
+
+Mã SHA-256
+
+Nút "Tải về"
+
+5. Chức năng tải file
+Trong danh sách file, nhấn vào tên file hoặc nút "Tải về" để download file
+
+File sẽ được tải về từ thư mục uploads trên server
+
+6. Quản lý người dùng (admin)
+Tài khoản mặc định:
+
+Username: admin
+
+Password: admin123
+
+Thông tin người dùng được lưu trong file users.json:
+
+Mật khẩu (lưu dưới dạng plaintext - chỉ phù hợp cho mục đích demo)
+
+Thời gian tạo tài khoản
+
+Thời gian đăng nhập cuối
+
